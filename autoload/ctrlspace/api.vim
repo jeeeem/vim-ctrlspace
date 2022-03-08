@@ -24,7 +24,7 @@ function! ctrlspace#api#BufferList(tabnr) abort
         endif
     endfor
 
-    call sort(bufferList, function("ctrlspace#engine#CompareByText"))
+    call sort(bufferList, function("ctrlspace#engine#CompareByIndex"))
 
     return bufferList
 endfunction
